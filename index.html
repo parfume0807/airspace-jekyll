@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" href="image/gps_pavicon.ico" type="image/x-icon" />
+    <link rel="icon" href="image/gps_pavicon.ico" type="image/x-icon" />
+    <title>Green Plugged Festival</title>
+    <link rel="stylesheet" href="css/main_gps.css">
+    <script src="js/jquery-1.12.1.min.js"></script>
+    <script src="js/mousewheel.js"></script>
+    <script src="js/gps.js"></script>
+    <!--
+      <link href="http://vjs.zencdn.net/5.19.2/video-js.css" rel="stylesheet">
+         If you'd like to support IE8 
+      <script src="http://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+    -->
+
+    <!--[if lte IE 8]>    
+    <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+    <script src="js/jquery-ui-1.9.2.min.js"></script>
+<!--    <script src="js/scrolloverflow.js"></script>-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCs_C1aXX1kxbINy4dx9HWknSrd60d9A7w"></script>
+    <script>
+        // In the following example, markers appear when the user clicks on the map.
+        // Each marker is labeled with a single alphabetical character.
+        var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        var labelIndex = 0;
+
+        function initialize() {
+            var bangalore = {
+                lat: 37.5668302,
+                lng: 126.8761986
+            };
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 15,
+                center: bangalore
+            });
+
+            // This event listener calls addMarker() when the map is clicked.
+            google.maps.event.addListener(map, 'click', function(event) {
+                addMarker(event.latLng, map);
+            });
+
+            // Add a marker at the center of the map.
+            addMarker(bangalore, map);
+        }
+
+        // Adds a marker to the map.
+        function addMarker(location, map) {
+            // Add the marker at the clicked location, and add the next-available label
+            // from the array of alphabetical characters.
+            var marker = new google.maps.Marker({
+                position: location,
+                label: labels[labelIndex++ % labels.length],
+                map: map
+            });
+        }
+
+        google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+
+
+</head>
+
+
+<body>
+    <!--1.aside-->
+    <aside class="left">
+        <header>
+            <h1 class="logo">
+                <a href="#"><img src="image/logo.png" alt="Green Plugged Festival"></a>
+            </h1>
+            <nav>
+                <ul class="nav">
+                    <li class="mm1">
+                        <a href="#">HOME</a>
+                    </li>
+                    <li class="mm2">
+                        <a href="#">ABOUT GPS</a>
+                        <div class="subBg">
+                            <ul class="sub sub1">
+                                <li><a href="#">History</a></li>
+                                <li><a href="#">Gallery</a></li>
+                                <li><a href="#">공모전</a></li>
+                                <li><a href="#">오시는 길</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="mm3">
+                        <a href="#">LINE UP</a>
+                        <div class="subBg">
+                            <ul class="sub sub2">
+                                <li><a href="#">Time Table</a></li>
+                                <li><a href="#">Last Line-up</a></li>
+                            </ul>
+
+                        </div>
+                    </li>
+                    <li class="mm4">
+                        <a href="#">TICKETS</a>
+
+                    </li>
+                    <li class="mm5">
+                        <a href="#">[SUM&infin;]</a>
+
+                    </li>
+                    <li class="mm6">
+                        <a href="#">NOTICE</a>
+                        <div class="subBg">
+                            <ul class="sub sub3">
+                                <li><a href="#">Press 신청</a></li>
+                                <li><a href="#">협찬/F&amp;B 입점신청</a></li>
+                                <li><a href="#">Green Mate</a></li>
+                            </ul>
+
+                        </div>
+                    </li>
+                    <li class="mm7">
+                        <a href="#">FAQ &vert; Q&amp;A</a>
+
+
+
+                    </li>
+                </ul>
+            </nav>
+
+        </header>
+
+        <footer>
+            <ul class="sns clearfix">
+                <li class="facebook">
+                    <a href="#">페이스북가기</a>
+                </li>
+                <li class="twitter">
+                    <a href="#">트위터가기</a>
+                </li>
+                <li class="youtube">
+                    <a href="#">유투브가기</a>
+                </li>
+                <li class="insta">
+                    <a href="#">인스타그램가기</a>
+                </li>
+                <li class="band">
+                    <a href="#">밴드가기</a>
+                </li>
+            </ul>
+
+            <ul class="lang">
+                <li>
+                    <a href="#">KOR</a>
+                </li>
+                <li>
+                    <a href="#">ENG</a>
+                </li>
+            </ul>
+            <p class="designBy">본 사이트는 포트폴리오 용도로 제작 된 가상 사이트 입니다. 모든 콘텐츠의 저작권은 GREENPLUGGED SEOUL FESTIVAL(GPS)에 있습니다. Designed by 김은빈</p>
+
+        </footer>
+    </aside>
+    
+<!--
+     <ul id="slideBtn">
+         <li class="page1"><a href="">1</a></li>
+         <li class="page2"><a href="">2</a></li>
+         <li class="page3"><a href="">3</a></li>
+         <li class="page4"><a href="">4</a></li>
+         <li class="page5"><a href="">5</a></li>
+     </ul>
+-->
+    
+    <aside id="slideBtn">
+    <div id="radios">
+  <label for="input1"></label>
+  <input  id="input1" name="radio" type="radio" />
+  <label for="input2"></label>
+  <input  id="input2" name="radio" type="radio" />
+  <label for="input3"></label>
+  <input  id="input3" name="radio" type="radio" />
+  <label for="input4"></label>
+  <input  id="input4" name="radio" type="radio" />
+  <label for="input5"></label>
+  <input  id="input5" name="radio" type="radio" />
+  <span id="slider"></span>
+</div>
+</aside>
+<!--
+    <aside class="right">
+        <ul class="slide_btn">
+            <li><a href="#page1" class="on">1</a></li>
+            <li><a href="#page2">2</a></li>
+            <li><a href="#page3">3</a></li>
+            <li><a href="#page4">4</a></li>
+            <li class="last_item"><a href="#page5">5</a></li>
+           
+        </ul>
+    </aside>
+-->
+
+
+    <!--2.page1-->
+
+    <div class="wrap">
+        <div id="page1">
+            <h3>따뜻한 봄날의 음악소풍, 가장 행복한 음악축제</h3>
+            <h2>그린 플러그드 페스티벌!</h2>
+            <div class="btnWrap1">
+  		<a href="#" class="button">Ticket 예매하기</a>
+	</div>
+        </div>
+    </div>
+    <!--3. page2-->
+    <div class="wrap">
+        <div id="page2">
+            <h3>다양한 장르를 아우르는 음악 여행</h3>
+            <h2>지금 실력파 뮤지션들을 <br> GPS 스테이지에서 만나 보세요!</h2>
+          	<div class="btnWrap2">
+  		<a href="#" class="button">Line-up 보러 가기</a>
+	</div>
+        </div>
+    </div>
+
+    <!--4. page3-->
+
+    <div class="wrap p3wrap">
+        <div id="page3">
+            <div class="gallery">
+                <div class="photo leftBox">
+                    <ul>
+                        <li class="pt1"><a href="#">1</a></li>
+                        <li class="pt2"><a href="#">2</a></li>
+                        <li class="pt3"><a href="#">3</a></li>
+                        <li class="pt4"><a href="#">4</a></li>
+                    </ul>
+                </div>
+                <div class="photo rightBox">
+                    <ul>
+                        <li class="pt5">1</li>
+                        <li class="pt6">2</li>
+                        <li class="pt7">3</li>
+                    </ul>
+                </div>
+                <!--
+            <p>adfad</p>
+            <p>1213</p>
+            -->
+            </div>
+        </div>
+    </div>
+
+    <!--5. page4-->
+    <div class="wrap">
+        <div id="page4">
+
+            <p class="video">
+                <iframe title="그린플러그드2016하이라이트영상" width="1046" height="444" src="https://www.youtube.com/embed/qOuwJko--lA?ecver=2" allowfullscreen></iframe>
+            </p>
+
+        </div>
+    </div>
+
+    <!-- 6. page5 -->
+    <div class="wrap">
+        <div id="page5">
+
+            <div id="map"></div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
