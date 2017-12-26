@@ -31,13 +31,17 @@
 	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.1.0/css/font-awesome.min.css">
 	<!-- Elegant Icons -->
 	<link rel="stylesheet" type="text/css" href="fonts/eleganticons/et-icons.css">
-<!-- 	<link rel="stylesheet" type="text/css" href="http://wowslider.com/sliders/demo-35/engine1/style.css" />
- -->	
- 	<link rel="stylesheet" type="text/css" href="./css/wowslider.css" />
+
+<!-- slit slider -->
+	<link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/custom.css" />
+		<script type="text/javascript" src="js/modernizr.custom.79639.js"></script>
+		<noscript>
+			<!-- <link rel="stylesheet" type="text/css" href="css/styleNoJS.css" /> -->
+		</noscript>
+
 <!-- Main style -->
 	<link rel="stylesheet" type="text/css" href="css/cardio.css">
-	<script type="text/javascript" src="http://wowslider.com/images/demo/jquery.js"></script>
-<script type="text/javascript" src="http://wowslider.com/styles/a.js"></script>
 </head>
 
 <body>
@@ -71,43 +75,61 @@
 		<!-- /.container-fluid -->
 	</nav>
 
-
 	<header id="home">
-		<!-- <div class="visual">
-			<div class="container">
-				<div class="table">
-					<div class="header-text">
-						<div class="row">
-							<div class="col-md-12 text-center">
-								<h3 class="light white">a challenging, steady, patient</h3>
-								<h3 class="light white">a greedy, curious</h3>
-								<h1 class="white typed">WEB DESIGNER</h1>
-								<span class="typed-cursor">|</span>
-							</div>
+		<div class="demo-1">
+		
+            <div id="slider" class="sl-slider-wrapper">
+
+				<div class="sl-slider">
+				
+					<div class="sl-slide bg-1" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
+						<div class="sl-slide-inner">
+							<div class="deco" data-icon="H"></div>
+							<h2>A bene placito</h2>
+							<blockquote><p>You have just dined, and however scrupulously the slaughterhouse is concealed in the graceful distance of miles, there is complicity.</p><cite>Ralph Waldo Emerson</cite></blockquote>
 						</div>
 					</div>
-				</div>
-			</div>
-		</div> -->
-		<div id="wowslider-container1">
-	<div class="ws_images"><ul>
-		<li><img src="img/bg01.jpeg" title="WEB DESIGNER" id="wows1_0"/>I'm a type of person who has a lot of curiocity about life, travel, and people.</li>
-		<li><img src="img/bg02.jpg" alt="html css slideshow" title="WEB PUBLISHER" id="wows1_1"/>Sunday trip</li>
-		<li><img src="http://wowslider.com/sliders/demo-35/data1/images/train932835.jpg" alt="css slideshow template" title="Train" id="wows1_2"/>Inside of empty wagon</li>
-	</ul></div>
-	<div class="ws_bullets"><div>
-		<a href="#" title="WEB DESIGNER"><span>1</span></a>
-		<a href="#" title="Subway Station"><span>2</span></a>
-		<a href="#" title="Train"><span>3</span></a>
-	</div></div>
-	<div class="ws_shadow"></div>
-	</div>	
-	<script type="text/javascript" src="http://wowslider.com/images/demo/wowslider.js"></script>
-	<script type="text/javascript" src="http://wowslider.com/sliders/demo-35/engine1/script.js"></script>        <!-- End WOWSlider.com BODY section -->
-<br />
-</div>
+					
+					<div class="sl-slide bg-2" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5">
+						<div class="sl-slide-inner">
+							<div class="deco" data-icon="q"></div>
+							<h2>Regula aurea</h2>
+							<blockquote><p>Until he extends the circle of his compassion to all living things, man will not himself find peace.</p><cite>Albert Schweitzer</cite></blockquote>
+						</div>
+					</div>
+					
+					<div class="sl-slide bg-3" data-orientation="horizontal" data-slice1-rotation="3" data-slice2-rotation="3" data-slice1-scale="2" data-slice2-scale="1">
+						<div class="sl-slide-inner">
+							<div class="deco" data-icon="O"></div>
+							<h2>Dum spiro, spero</h2>
+							<blockquote><p>Thousands of people who say they 'love' animals sit down once or twice a day to enjoy the flesh of creatures who have been utterly deprived of everything that could make their lives worth living and who endured the awful suffering and the terror of the abattoirs.</p><cite>Dame Jane Morris Goodall</cite></blockquote>
+						</div>
+					</div>
+				
+				</div><!-- /sl-slider -->
+				
+				<nav id="nav-arrows" class="nav-arrows">
+					<span class="nav-arrow-prev">Previous</span>
+					<span class="nav-arrow-next">Next</span>
+				</nav>
+
+<!-- 				<nav id="nav-dots" class="nav-dots">
+					<span class="nav-dot-current"></span>
+					<span></span>
+					<span></span>
+				</nav> -->
+
+			</div><!-- /slider-wrapper -->
+
+        </div>	
+
+				<nav id="nav-dots" class="nav-dots">
+					<span class="nav-dot-current"></span>
+					<span></span>
+					<span></span>
+				</nav>
     
-<div id="effbuttons" class="control-buttons"></div>
+<!-- <div id="effbuttons" class="control-buttons"></div> -->
 
 	</header>
 <!-- 	<section>
@@ -473,13 +495,98 @@
 		<a href="#" class="close-link"><i class="arrow_up"></i></a>
 	</div>
 	<!-- Scripts -->
+	<!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script> -->
 	<script src="js/jquery-1.11.1.min.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/wow.min.js"></script>
 	<script src="js/typewriter.js"></script>
 	<script src="js/jquery.onepagenav.js"></script>
-	<script src="js/main.js"></script>
+	<script src="js/main.js"></script><script type="text/javascript" src="js/jquery.ba-cond.min.js"></script>
+		<script type="text/javascript" src="js/jquery.slitslider.js"></script>
+		<script type="text/javascript">	
+			$(function() {
+			
+				var Page = (function() {
+
+					var $navArrows = $( '#nav-arrows' ),
+						$nav = $( '#nav-dots > span' ),
+						slitslider = $( '#slider' ).slitslider( {
+							onBeforeChange : function( slide, pos ) {
+
+								$nav.removeClass( 'nav-dot-current' );
+								$nav.eq( pos ).addClass( 'nav-dot-current' );
+
+							}
+						} ),
+
+						init = function() {
+
+							initEvents();
+							
+						},
+						initEvents = function() {
+
+							// add navigation events
+							$navArrows.children( ':last' ).on( 'click', function() {
+
+								slitslider.next();
+								return false;
+
+							} );
+
+							$navArrows.children( ':first' ).on( 'click', function() {
+								
+								slitslider.previous();
+								return false;
+
+							} );
+
+							$nav.each( function( i ) {
+							
+								$( this ).on( 'click', function( event ) {
+									
+									var $dot = $( this );
+									
+									if( !slitslider.isActive() ) {
+
+										$nav.removeClass( 'nav-dot-current' );
+										$dot.addClass( 'nav-dot-current' );
+									
+									}
+									
+									slitslider.jump( i + 1 );
+									return false;
+								
+								} );
+								
+							} );
+
+						};
+
+						return { init : init };
+
+				})();
+
+				Page.init();
+
+				/**
+				 * Notes: 
+				 * 
+				 * example how to add items:
+				 */
+
+				/*
+				
+				var $items  = $('<div class="sl-slide sl-slide-color-2" data-orientation="horizontal" data-slice1-rotation="-5" data-slice2-rotation="10" data-slice1-scale="2" data-slice2-scale="1"><div class="sl-slide-inner bg-1"><div class="sl-deco" data-icon="t"></div><h2>some text</h2><blockquote><p>bla bla</p><cite>Margi Clarke</cite></blockquote></div></div>');
+				
+				// call the plugin's add method
+				ss.add($items);
+
+				*/
+			
+			});
+		</script>
 </body>
 
 </html>
