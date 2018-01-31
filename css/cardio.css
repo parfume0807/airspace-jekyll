@@ -652,9 +652,13 @@ section {
 	transform: scale(1);
 }
 
+.view-arrow{
+	font-weight: bold;
+}
+
 .team {
-	margin: 80px 0;
-	padding-bottom: 60px;
+	margin: 50px 0;
+	padding-bottom: 30px;
 	background: white;
 	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.07);
 }
@@ -670,7 +674,7 @@ section {
 
 .team:hover .cover .overlay {
 	opacity: 1;
-}
+/}
 
 .team .avatar {
 	position: relative;
@@ -680,7 +684,7 @@ section {
 }
 
 .team .title {
-	margin: 50px 0;
+	margin: 30px 0;
 }
 /* Pricing */
 

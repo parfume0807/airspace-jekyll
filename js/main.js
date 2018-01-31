@@ -17,6 +17,8 @@ jQuery(function($) {
 		});
 
 		// Header Init
+
+		$('#nav-dots').show();
 		if ($(window).height() > $(window).width()) {
 			var ratio = $('.parallax').width() / $('.parallax').height();
 			$('.parallax img').css('height', ($(window).height()) + 'px');
@@ -80,9 +82,11 @@ jQuery(function($) {
 		if ($(window).scrollTop() > 50) {
 			$('nav.original').css('opacity', '0');
 			$('nav.navbar-fixed-top').css('opacity', '1');
+			$('#nav-dots,#nav-arrows').css('display','none');
 		} else {
 			$('nav.original').css('opacity', '1');
 			$('nav.navbar-fixed-top').css('opacity', '0');
+			$('#nav-dots,#nav-arrows').css('display','block');
 		}
 	}
 
